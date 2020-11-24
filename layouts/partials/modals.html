@@ -23,7 +23,7 @@
 
         <div class="modal-content"{{ if .Params.terminal.lines -}} hidden id="content-{{ $modalID }}" {{- end}}>
           <h2>{{ .Params.title }}</h2>
-
+          {{ if .Params.subtitle }}<h3>{{ .Params.subtitle }}</h3>{{ end }}
           <!-- Content -->
           <article class="entry-content">
             {{ if eq (len (trim .Content "\r\n" )) 0 -}}

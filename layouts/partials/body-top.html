@@ -13,7 +13,8 @@
       </div>
       <div class="row middle-xs center-xs">
         <div class="col-xs-12">
-          <h1>{{ .Site.Params.tagline | markdownify }}<span class="cursor">|</span></h1>
+          <h1>{{ .Site.Params.tagline | markdownify }}</h1>
+          <h2>{{ .Site.Params.tagline2 | markdownify }}<span class="cursor">|</span></h2>
           <noscript>
               <span class="icon icon-attention-circled icon-2x" style="color:red"></span>
               <h1>{{ i18n "noJsMsg" }}</h1>
